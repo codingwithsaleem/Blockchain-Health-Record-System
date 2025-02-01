@@ -1,0 +1,44 @@
+{
+  "address": "0x0242CA4847D392751fc526125c896acA38BF02E0",
+  "abi": [
+    {
+      "inputs": [
+        { "internalType": "string", "name": "doc_cid", "type": "string" }
+      ],
+      "name": "addDoctor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x0be61700"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "patient_cid", "type": "string" }
+      ],
+      "name": "addPatient",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xfb87cf94"
+    },
+    {
+      "inputs": [],
+      "name": "getDoctor",
+      "outputs": [{ "internalType": "string[]", "name": "", "type": "string[]" }],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true,
+      "signature": "0x3aaa5920"
+    },
+    {
+      "inputs": [],
+      "name": "getPatient",
+      "outputs": [{ "internalType": "string[]", "name": "", "type": "string[]" }],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true,
+      "signature": "0x7b0f9a36"
+    }
+  ]
+}
+

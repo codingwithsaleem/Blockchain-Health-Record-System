@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crud.js",
+  "proxy": "http://localhost:8545",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run ganache\" \"npm run deploy\"",
+    "wait-deploy": "wait-on http://127.0.0.1:8545 && npm run deploy",
+    "deploy": "node crud.js",
+    "ganache": "ganache-cli --networkId 5777 --port 8545 --gasLimit 300000000 --gasPrice 20000000000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.8.19",
+    "web3": "^1.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "wait-on": "^8.0.2"
+  }
+}
